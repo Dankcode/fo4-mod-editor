@@ -1,0 +1,9 @@
+{
+  "name": "for4-mod-editor-bridge",
+  "version": "0.1.0",
+  "description": "Thin Vortex bridge for the for4-mod-editor Python engine",
+  "main": "index.js",
+  "private": true,
+  "author": "Leon"
+}
+

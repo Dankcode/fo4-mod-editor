@@ -1,0 +1,30 @@
+name: Build Windows executable
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install build dependencies
+        run: python -m pip install -e ".[packaging]"
+      - name: Build executable
+        run: >-
+          python -m PyInstaller --clean --noconfirm --onefile
+          --name for4-mod-editor --paths src scripts/for4_entry.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: for4-mod-editor-windows
+          path: dist/for4-mod-editor.exe
+          if-no-files-found: error

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fallout 4 Mod Maintainer"
+  short_description: "Scan, patch, merge, and stage Fallout 4 mods"
+  default_prompt: "Use $fo4-mod-maintainer to scan my Fallout 4 load order and return the smallest safe next action."

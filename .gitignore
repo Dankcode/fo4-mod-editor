@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+*.spec
+
+# Local secrets and machine-specific paths
+.env
+fo4ap.toml
+*.local.toml
+
+# Runtime state and downloaded/generated artifacts
+.fo4ap/
+work/
+backups/
+downloads/
+reports/
+*.part
+
+# Upstream source checkouts are development references, not vendored code
+upstream/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

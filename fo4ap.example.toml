@@ -1,0 +1,18 @@
+# Copy this file to fo4ap.toml and replace every path.
+# Keep NEXUS_API_KEY in the environment; never put it in this file.
+
+[paths]
+fo4edit_exe = "C:/Tools/xEdit/FO4Edit64.exe"
+game_data_dir = "C:/Program Files (x86)/Steam/steamapps/common/Fallout 4/Data"
+plugins_txt = "C:/Users/YOU/AppData/Local/Fallout4/plugins.txt"
+vortex_downloads_dir = "D:/Vortex Downloads/fallout4"
+vortex_staging_dir = "D:/Vortex Mods/fallout4"
+work_dir = "C:/Users/YOU/AppData/Local/for4-mod-editor"
+
+[xedit]
+timeout_s = 1800
+
+[safety]
+patch_plugin = "For4ConflictPatch.esp"
+allow_experimental_full_merge = false
+

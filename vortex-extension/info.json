@@ -1,0 +1,7 @@
+{
+  "name": "for4-mod-editor Bridge",
+  "version": "0.1.0",
+  "description": "Imports, installs, and optionally deploys Python-generated Fallout 4 patch archives through Vortex public events.",
+  "author": "Leon"
+}
+
